@@ -30,5 +30,6 @@ public class VelocityLimiter : MonoBehaviour
     {
         var speedNorm = _rb.velocity.normalized;
         //_rb.velocity = speedNorm * _maxSpeed;
+        // todo
     }
 }

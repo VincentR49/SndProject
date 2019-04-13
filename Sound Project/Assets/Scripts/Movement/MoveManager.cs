@@ -5,9 +5,12 @@ public class MoveManager : MonoBehaviour
 {
     [SerializeField]
     private float _moveSpeed = 2f;
+    [SerializeField]
+    private bool _includeRotation = false;
 
     private Rigidbody _rb;
     private Vector3 _direction;
+
 
     private void Awake()
     {
@@ -18,6 +21,11 @@ public class MoveManager : MonoBehaviour
     public void Move(Vector3 direction)
     {
         _direction = direction;
+        if (_includeRotation)
+        {
+            _direction = transform.rotation * direction;
+        }
+        _direction.Normalize();
     }
 
     private void FixedUpdate()

@@ -16,16 +16,6 @@ public class PlayerController : MonoBehaviour
     private RotateManager _playerRotateManager;
 
 
-    private Vector3 _movementDirection;
-    private Rigidbody _rb;
-
-
-    private void Awake()
-    {
-        _rb = GetComponent<Rigidbody>();
-    }
-
-
     private void Update()
     {
         GetAxisDirection();
