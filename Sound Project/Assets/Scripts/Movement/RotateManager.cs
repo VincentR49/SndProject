@@ -23,6 +23,7 @@ public class RotateManager : MonoBehaviour
 
     public void Rotate(float value)
     {
+        //Debug.Log("Rotate " + value);
         _eulerAngle += _speed * value;
     }
 

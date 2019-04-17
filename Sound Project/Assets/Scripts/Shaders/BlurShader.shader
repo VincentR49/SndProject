@@ -3,7 +3,7 @@
     Properties
     {
         [HideInInspector]_MainTex("Texture", 2D) = "white" {}
-        _BlurSize("Blur Size", Range(0,0.1)) = 0
+        _BlurSize("Blur Size", Range(0,1)) = 0
         [KeywordEnum(Low, Medium, High)] _Samples ("Sample amount", Float) = 0
     }
     SubShader

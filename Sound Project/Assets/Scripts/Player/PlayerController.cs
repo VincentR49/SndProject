@@ -24,8 +24,8 @@ public class PlayerController : MonoBehaviour
             _jumpManager.Jump();
         }
         _moveManager.Move(GetAxisDirection());
-        _playerRotateManager.Rotate(Input.GetAxis("Mouse X"));
-        _cameraRotateManager.Rotate(Input.GetAxis("Mouse Y"));
+        _playerRotateManager.Rotate(-Input.GetAxis("Mouse X"));
+        _cameraRotateManager.Rotate(-Input.GetAxis("Mouse Y"));
     }
 
 
